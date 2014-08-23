@@ -47,6 +47,12 @@ class Adafruit_CAP1188(object):
     REV            =  0xFF
     LEDPOL         =  0x73
 
+    # Sensitivity Control (Datasheet 5.5)
+    SENS_CTL_REG        = 0x1F
+    SENS_CTL_MAX        = 0x0 << 4
+    SENS_CTL_DEFAULT    = 0x2 << 4
+    SENS_CTL_MIN        = 0x7 << 4
+
     # Calibration Activation (Datasheet 5.11)
     CAL_ACT_REG       = 0x26
     CAL_ACT_CS1       = 0x01 << 0
